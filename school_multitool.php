@@ -435,7 +435,7 @@ function curl($url, $cookies = "", $post = ""){
 	}
 	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE); 
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-	curl_setopt($ch, CURLOPT_TIMEOUT, 30); 
+	curl_setopt($ch, CURLOPT_TIMEOUT, 10); 
 	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 20);
 	$page = curl_exec( $ch);
 	curl_close($ch); 
